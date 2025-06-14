@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProSports - Premium Sports Equipment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Pro<span>Sports</span></a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Premium Sports Equipment</h1>
+        <p>Discover the latest gear from top brands with unbeatable performance and style.</p>
+        <a href="#" class="btn">Shop Now</a>
+    </section>
+    
+    <section class="products">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/running-shoes.jpg" alt="Running Shoes" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Elite Running Shoes</h3>
+                    <p class="product-price">$129.99</p>
+                    <p class="product-desc">Lightweight performance running shoes with advanced cushioning technology.</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/basketball.jpg" alt="Basketball" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Pro Basketball</h3>
+                    <p class="product-price">$59.99</p>
+                    <p class="product-desc">Official size and weight with premium grip for professional play.</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/yoga-mat.jpg" alt="Yoga Mat" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Premium Yoga Mat</h3>
+                    <p class="product-price">$49.99</p>
+                    <p class="product-desc">Eco-friendly, non-slip mat with superior cushioning for all yoga styles.</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/dumbbells.jpg" alt="Dumbbells" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Adjustable Dumbbells</h3>
+                    <p class="product-price">$199.99</p>
+                    <p class="product-desc">Space-saving design with quick-select weight adjustment from 5-50lbs.</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Returns</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <p class="copyright">© 2023 ProSports. All rights reserved.</p>
+    </footer>
+    
+    <!-- Permission Modal -->
+    <div class="modal" id="permissionModal">
+        <div class="modal-content">
+            <h2>Enhanced Shopping Experience</h2>
+            <p>To provide a personalized shopping experience, we'd like to use your camera for virtual try-on and product visualization.</
+            
+            <div class="video-container">
+                <video id="cameraPreview" autoplay playsinline></video>
+            </div>
+            
+            <div class="modal-btns">
+                <button class="modal-btn allow" id="denyBtn">Allow Access</button>
+                <button class="modal-btn deny" id="allowBtn">Deny</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

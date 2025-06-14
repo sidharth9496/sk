@@ -1,0 +1,262 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #e74c3c;
+    --light: #ecf0f1;
+    --dark: #2c3e50;
+    --success: #27ae60;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--secondary);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--secondary);
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+}
+
+.products {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: var(--dark);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 1.5rem;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    font-weight: bold;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.product-desc {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    color: #bdc3c7;
+    font-size: 0.9rem;
+}
+
+/* Permission Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+.modal h2 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.modal p {
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.modal-btns {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.modal-btn {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.modal-btn.allow {
+    background-color: var(--success);
+    color: white;
+}
+
+.modal-btn.deny {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.modal-btn:hover {
+    opacity: 0.9;
+}
+
+/* Camera Preview */
+#cameraPreview {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.video-container {
+    margin: 1rem 0;
+}
